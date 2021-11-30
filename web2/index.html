@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MaskenCheck</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="Style.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+    </head>
+
+    <body>        
+        <h1>Teachable Machine MaskChecker</h1>
+
+        <div id=content-container>
+            <div class="left" id="controlls">
+                <div class="controll-container" id="kiControl-container">
+                    <h2>KI-Steuerung</h2>
+                    <div id=button-container>
+                        <button type='button' onclick='startClassify()'>Start</button>
+                        <button type='button' onclick='stopClassify()'>Stop</button>
+                    </div>
+                </div>
+
+                <div class="controll-container" id="serialControl-container">
+                    <h2>Serielle Ausgabe</h2>
+                    <div id="button-container">
+                        <button type='button' onclick='connect()'>Verbinden</button>
+                        <button type='button' onclick='disconnect()'>Trennen</button>
+                    </div>
+                </div>                                
+            </div>
+
+            <div class="center" id="output-container">
+                <h2>KI-Ausgabe</h2>
+                <div id='webcam-container'>
+                    <canvas id='webcam-canvas-placeholder'></canvas>
+                </div>
+                <div id='label-container'></div>
+            </div>
+
+            
+        </div>
+
+        <script src="ki.js"></script>
+        <script src="serial.js"></script>
+        
+    </body>

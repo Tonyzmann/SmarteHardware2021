@@ -1,0 +1,92 @@
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    background-color: #0a3d62;
+    color: white; 
+    margin: 0px;
+    max-height: 5%;
+    height: 5%;
+    padding-left: 10px;
+}
+
+h2 {
+    color: black;
+    margin: 0px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #0a3d62;
+    font-size: 16px;
+    margin: 15px;
+    padding: 0.5rem;
+    min-width: 5rem;
+    min-height: 2rem;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    /*text-transform: uppercase;*/
+}
+
+button:hover {
+    background-color: white;
+}
+
+/*Grundstruktur der Seite links/mitte/rechts*/
+#content-container {
+    display: flex;
+    flex-direction: row;  
+    align-items: stretch;
+    height: 95%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: #3c6382;
+    min-width: 15vw;
+    padding: 5px;
+}
+
+.center {
+    background-color: white;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0px 0px 8px 5px gray inset;
+}
+
+#webcam-container {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+}
+
+#webcam-canvas-placeholder {
+    background-color: black;
+    width: 100%; 
+    height: 100%;
+}
+
+#label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#label-container > p {
+    font-size: 20px;
+}
+
+.controll-container {
+    margin-top: 5%;
+    margin-bottom: 20%;
+}

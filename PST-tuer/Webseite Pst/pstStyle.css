@@ -1,0 +1,28 @@
+html,
+body {
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 0;
+}
+canvas {
+  background: #999999;
+}
+body {
+  font-size: small;
+  color: #666666;
+  font-family: "Verdana", "Helvetica", sans-serif;
+}
+.header {
+  font-size: large;
+  color: #cc0a2f;
+  font-family: "Open Sans", monospace;
+}
+.comment {
+  font-size: small;
+  color: #666666;
+  font-style: italic;
+}
+
+.content {
+  margin-top: 20px;
+}

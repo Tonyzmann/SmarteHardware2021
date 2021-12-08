@@ -1,0 +1,6 @@
+Website:
+	"1" -> Tür öffnen
+
+Arduino:
+	"1" -> Tür offen # feedback -> wait
+	"2" -> Tür geschlossen # feedback -> reset
